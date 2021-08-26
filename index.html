@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- Compiled and minified JavaScript -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Proyecto Final</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Informatica</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Inicio <span class="sr-only">(current)
+                     </span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#titulos">Tienda</a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#miLista">Carrito</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="darkMode" href="#">Modo Oscuro</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/img/1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/img/2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/img/3.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div class="container animado" id="titulos">
+        <h1 class="text-center titulo animado" id="miListas">TIENDA</h1>
+    </div>
+    <div class="container">
+        <div class="row lista" id="listaNotebooks">
+        </div>
+    </div>
+    <div class="container">
+        <h1 class="text-center titulo animado" id="miLista">CARRITO</h1>
+    </div>
+    <div class="container animado">
+
+        <table class="table table-responsive{-sm|-md|-lg|-xl} mitabla">
+            <thead>
+                <tr>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Cantidad</th>
+                    <th scope="col">Precio Unitario</th>
+                    <th scope="col">Subtotal</th>
+                    <th scope="col">Agregar</th>
+                    <th scope="col">Quitar</th>
+                </tr>
+            </thead>
+            <tbody id="carrito">
+            </tbody>
+            <tr>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col">TOTAL </th>
+                <th scope="col" id="totalCarrito">$</th>
+            </tr>
+        </table>
+
+
+    </div>
+    <div class="vaciarCarrito container animado">
+        <button class="btn btn-danger" id="vaciar">Vaciar Carrito</button>
+        <button class="btn btn-danger" id="finalizarCompra">Finalizar Compra</button>
+    </div>
+    </div>
+
+    <div>
+        <h1 id="ofertas" class="text-center titulo animado animate__animated animate__infinite animate__pulse">LAS MEJORES OFERTAS</h1>
+    </div>
+
+    <!--    banner -->
+    <div class="mibanner">
+        <section class="banner2">
+            <h3>Las mejores notebook! al mejor precio!</h3>
+        </section>
+    </div>
+
+    <div class="covid container animado animate__animated animate__infinite animate__fadeInLeft">
+        <h4>COVID-19: Para resguardar la salud de todos, nos encontramos realizando únicamente entregas a Domicilio. ¡Contactanos!
+        </h4>
+    </div>
+
+    <!--  footer -->
+
+    <!-- Site footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <h6>About</h6>
+                    <p class="text-justify"> Notebook al Mejor Precio <i>Elegi las que mas te gusten</i> Todas las marcas todos los precios!!</p>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>Categories</h6>
+                    <ul class="footer-links">
+                        <li><a href="http://mipagina.com.ar">HP</a></li>
+                        <li><a href="http://mipagina.com.ar">DELL</a></li>
+                        <li><a href="http://mipagina.com.ar">LENOVO</a></li>
+                        <li><a href="http://mipagina.com.ar">TOSHIBA</a></li>
+                        <li><a href="http://mipagina.com.ar">KANYI</a></li>
+                        <li>
+                            <a href="http://mipagina.com.ar>MAC</a></li>
+                    </ul>
+                </div>
+
+                <div class=" col-xs-6 col-md-3 ">
+                    <h6>Quick Links</h6>
+                    <ul class="footer-links ">
+                        <li><a href="mipagina.com.ar/about/ ">Sobre nosotros</a></li>
+                        <li><a href="mipagina.com.arcontact/ ">Contactanos</a></li>
+                        <li><a href="mipagina.com.ar ">Donde Estamos</a></li>
+                        <li><a href="mipagina.com.ar ">Politica de seguridad</a></li>
+                        <li><a href="mipagina.com.ar ">Encuentranos en google</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="container ">
+            <div class="row ">
+                <div class="col-md-8 col-sm-6 col-xs-12 ">
+                    <p class="copyright-text ">Copyright &copy; 2021 All Rights Reserved by
+                        <a href="# ">Marcelito</a>.
+                    </p>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12 ">
+                    <ul class="social-icons ">
+                        <li><a class="facebook " href="# "><i class="fa fa-facebook "></i></a></li>
+                        <li><a class="twitter " href="# "><i class="fa fa-twitter "></i></a></li>
+                        <li><a class="dribbble " href="# "><i class="fa fa-dribbble "></i></a></li>
+                        <li><a class="linkedin " href="# "><i class="fa fa-linkedin "></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="go-top-container ">
+            <div class="go-top-button ">
+                <i class="fas fa-chevron-up "></i>
+            </div>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js " integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin=" anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx " crossorigin="anonymous "></script>
+    <script src="js/main.js "></script>
+    <script src="js/gotop.js "></script>
+    <script src="js/animado.js "></script>
+
+</body>
+
+</html>

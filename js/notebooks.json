@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "nombre": "Macbook",
+    "stock": 4,
+    "precio": 235000,
+    "imagen": "img/note1.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "Lenovo",
+    "stock": 4,
+    "precio": 180000,
+    "imagen": "img/note2.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "Hewllet Parckard",
+    "stock": 4,
+    "precio": 160000,
+    "imagen": "img/note3.jpg"
+  },
+  {
+    "id": 4,
+    "nombre": "Acer",
+    "stock": 4,
+    "precio": 1380000,
+    "imagen": "img/note4.jpg"
+  },
+  {
+    "id": 5,
+    "nombre": "Asus",
+    "stock": 4,
+    "precio": 210000,
+    "imagen": "img/note5.jpg"
+  },
+  {
+    "id": 6,
+    "nombre": "Dell",
+    "stock": 4,
+    "precio": 222000,
+    "imagen": "img/note6.jpg"
+  }
+]
